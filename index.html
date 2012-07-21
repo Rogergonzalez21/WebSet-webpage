@@ -103,7 +103,7 @@
 								<script>
 									! function(d, s, id) {
 										var js, fjs = d.getElementsByTagName(s)[0];
-										if (!d.getElementById(id)) {
+										if(!d.getElementById(id)) {
 											js = d.createElement(s);
 											js.id = id;
 											js.src = "//platform.twitter.com/widgets.js";
@@ -125,7 +125,7 @@
 								<script>
 									! function(d, s, id) {
 										var js, fjs = d.getElementsByTagName(s)[0];
-										if (!d.getElementById(id)) {
+										if(!d.getElementById(id)) {
 											js = d.createElement(s);
 											js.id = id;
 											js.src = "//platform.twitter.com/widgets.js";
@@ -187,9 +187,6 @@
 
 							<div class="span3">
 								<a href="#carelibro" data-toggle="modal"><img src="img/CareLibroImagen.png" class="images" alt="CareLibroImage"/></a>
-								<br />
-								<br />
-								<a class="btn btn-success" id="popover" rel="popover" data-content="Puedes ver el codigo fuente de esta Web desde GitHub. ¡Cuidado! Solo para entendidos" data-original-title="Codigo Fuente" target="_blank" href="https://github.com/adrianObel/Care-Libro">Ver repositorio en GitHub</a>
 
 							</div>
 							<div class="span3">
@@ -197,13 +194,38 @@
 							</div>
 							<div class="span3">
 								<img src="img/cnit.png" class="images" alt="CNITImage" />
+
+							</div>
+							<div class="span3">
+								<img src="img/WebSet.png" class="images" alt="WebSetImage" />
+
+							</div>
+						</div>
+						<div class="row">
+
+							<div class="span3">
+								<br/>
 								<br />
+								<a class="btn btn-success" id="popover" rel="popover" data-content="Puedes ver el codigo fuente de esta Web desde GitHub. ¡Cuidado! Solo para entendidos" data-original-title="Codigo Fuente" target="_blank" href="https://github.com/adrianObel/Care-Libro">Ver repositorio en GitHub</a>
+
+							</div>
+							<div class="span3">
+								<br/>
+								<br />
+								<a class="btn btn-success" id="popover3" rel="popover" data-content="Puedes ver el codigo fuente de esta Web desde GitHub. ¡Cuidado! Solo para entendidos" data-original-title="Codigo Fuente" target="_blank" href="#">Ver repositorio en GitHub</a>
+
+							</div>
+							<div class="span3">
+								<br/>
 								<br />
 								<a class="btn btn-success" id="popover3" rel="popover" data-content="Puedes ver el codigo fuente de esta Web desde GitHub. ¡Cuidado! Solo para entendidos" data-original-title="Codigo Fuente" target="_blank" href="https://github.com/sadasant/CNIT.org.ve">Ver repositorio en GitHub</a>
 
 							</div>
 							<div class="span3">
-								<img src="img/cnit.png" class="images" alt="EstaPaginaImage" />
+								<br/>
+								<br />
+								<a class="btn btn-success" id="popover4" rel="popover" data-content="Puedes ver el codigo fuente de esta Web desde GitHub. ¡Cuidado! Solo para entendidos" data-original-title="Codigo Fuente" target="_blank" href="https://github.com/Rogergonzalez21/WebSet-webpage">Ver repositorio en GitHub</a>
+
 							</div>
 						</div>
 					</div>
@@ -329,9 +351,14 @@
 			</section>
 			<hr />
 			<footer>
-				<p>
+				<div align="center">
+					<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/deed.es"><img alt="Licencia Creative Commons" style="border-width:0" src="http://i.creativecommons.org/l/by-nc-sa/3.0/88x31.png" /></a>
+					<br />
+					<span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">WebSet</span> por <a xmlns:cc="http://creativecommons.org/ns#" href="http://www.webset.com.ve" property="cc:attributionName" rel="cc:attributionURL">Roger Gonzalez - Adrian Obelmejias</a> se encuentra bajo una Licencia <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/deed.es">Creative Commons Atribución-NoComercial-CompartirIgual 3.0 Unported</a>.
+					<br />
 					&copy; Roger Gonzalez & Adrian Obelmejias. 2012
-				</p>
+
+				</div>
 			</footer>
 
 			<div id="pibv" class="modal hide fade in" style="display: none; ">
@@ -427,6 +454,9 @@
 			});
 			$(function() {
 				$("#popover3").popover();
+			});
+			$(function() {
+				$("#popover4").popover();
 			});
 			$(function() {
 				$("#RmailPopover").popover();
