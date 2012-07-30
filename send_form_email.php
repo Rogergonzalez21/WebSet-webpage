@@ -2,8 +2,8 @@
 if(isset($_POST['email'])) {
      
     // EDIT THE 2 LINES BELOW AS REQUIRED
-    $email_to = "rogergonzalez21@gmail.com";
-    $email_subject = "Pagina web de Paginas Web (?)";
+    $email_to = "contacto.webset.com.ve";
+    $email_subject = "Contacto de Webset.com.ve";
      
      
     function died($error) {
