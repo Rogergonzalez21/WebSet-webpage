@@ -7,7 +7,7 @@
 		Remove this if you use the .htaccess -->
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 
-		<title>Home</title>
+		<title>WebSet - Diseño de paginas Web</title>
 		<meta name="description" content="" />
 		<meta name="author" content="Roger Gonzalez" />
 
@@ -16,6 +16,9 @@
 		<link rel="stylesheet" type="text/css" href="css/bootstrap-responsive.css" />
 		<link rel="stylesheet" type="text/css" href="css/docs.css" />
 		<link rel="stylesheet" type="text/css" href="css/style.css" />
+
+		<link rel="icon" type="image/x-icon" href="img/favicon.png" />
+
 		<style type="text/css">
 			body {
 				padding-top: 20px;
@@ -25,7 +28,7 @@
 		</style>
 	</head>
 
-	<body data-spy="scroll">
+	<body data-spy="scroll" data-offset="50">
 		<!-- Inicio del Container -->
 		<div class="container">
 			<header class="jumbotron subhead" id="overview">
@@ -103,7 +106,7 @@
 								<script>
 									! function(d, s, id) {
 										var js, fjs = d.getElementsByTagName(s)[0];
-										if(!d.getElementById(id)) {
+										if (!d.getElementById(id)) {
 											js = d.createElement(s);
 											js.id = id;
 											js.src = "//platform.twitter.com/widgets.js";
@@ -125,7 +128,7 @@
 								<script>
 									! function(d, s, id) {
 										var js, fjs = d.getElementsByTagName(s)[0];
-										if(!d.getElementById(id)) {
+										if (!d.getElementById(id)) {
 											js = d.createElement(s);
 											js.id = id;
 											js.src = "//platform.twitter.com/widgets.js";
@@ -197,7 +200,7 @@
 
 							</div>
 							<div class="span3">
-								<img src="img/WebSet.png" class="images" alt="WebSetImage" />
+								<img src="img/WebsetImagen.png" class="images" alt="WebSetImage" />
 
 							</div>
 						</div>
@@ -212,7 +215,7 @@
 							<div class="span3">
 								<br/>
 								<br />
-								<a class="btn btn-success" id="popover3" rel="popover" data-content="Puedes ver el codigo fuente de esta Web desde GitHub. ¡Cuidado! Solo para entendidos" data-original-title="Codigo Fuente" target="_blank" href="#">Ver repositorio en GitHub</a>
+								<a class="btn disabled" id="popover2" rel="popover" data-content="Por ahora no hay codigo fuente, lo sentimos." data-original-title="Codigo Fuente" href="#otherjobs">¡No hay codigo fuente!</a>
 
 							</div>
 							<div class="span3">
@@ -439,18 +442,16 @@
 			</div>
 		</div><!-- Fin del Container -->
 		<script src="js/jquery-1.7.2.js"></script>
+		<script src="js/bootstrap.js"></script>
 		<script src="js/scrollsubnav.js"></script>
-		<script src="js/bootstrap-scrollspy.js"></script>
-		<script src="js/bootstrap-modal.js"></script>
-		<script src="js/bootstrap-transition.js"></script>
-		<script src="js/bootstrap-carousel.js"></script>
-		<script src="js/bootstrap-tooltip.js"></script>
-		<script src="js/bootstrap-popover.js"></script>
 		<script src="js/jquery.validate.js"></script>
 		<script src="js/validate.js"></script>
 		<script>
 			$(function() {
 				$("#popover").popover();
+			});
+			$(function() {
+				$("#popover2").popover();
 			});
 			$(function() {
 				$("#popover3").popover();
