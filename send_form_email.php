@@ -70,7 +70,6 @@ $headers = 'From: '.$email_from."\r\n".
 ?>
  
 <!-- include your own success html here -->
-
 <!DOCTYPE html>
 <html lang="en">
 	<head>
@@ -124,8 +123,23 @@ $headers = 'From: '.$email_from."\r\n".
 						<li class="">
 							<a href="#otherjobs">Trabajos Anteriores</a>
 						</li>
-						<li class="">
-							<a href="#offer">¿Que tenemos para ofrecer?</a>
+
+						<li class="dropdown">
+							<a class="dropdown-toggle" data-toggle="dropdown" href="#">¿Que tenemos para ofrecer?<b class="caret"></b></a>
+							<ul class="dropdown-menu">
+								<li>
+									<a href="#design">Diseño/Programacion web</a>
+								</li>
+								<li>
+									<a href="#domains">Dominios y Hosting</a>
+								</li>
+								<li>
+									<a href="#programation">Programacion Web</a>
+								</li>
+								<li>
+									<a href="#databases">Bases de datos</a>
+								</li>
+							</ul>
 						</li>
 						<li class="">
 							<a href="#contact">Contacto</a>
@@ -249,7 +263,7 @@ $headers = 'From: '.$email_from."\r\n".
 								<p class="lead">
 									Remodelacion de la pagina web de la Primera Iglesia Bautista de Valencia.
 								</p>
-								
+
 								<a href="#pibv" data-toggle="modal"><img src="img/PIBVImage.png" class="images" alt="PIBVImage" /></a>
 								<br/>
 								<br />
@@ -273,60 +287,154 @@ $headers = 'From: '.$email_from."\r\n".
 				</div>
 				<br />
 				<br />
-				<section id="offer">
+				<br />
+				<br />
+				<section>
 					<div class="row">
 						<div class="span12" align="center">
 							<h1>¿Que tenemos para ofrecer?</h1>
-							<small>Precio por Hosting y Dominio. Si desea una cotizacion por el desarrollo y diseño de una pagina web, 
-								dirijase al area de contacto y envienos un correo electronico.</small>
 							<hr />
-							<div class="row">
-								<div class="span8">
-									<img src="img/ofrecer.png" width="600" height="600" />
-								</div>
-								<div class="span4" align="left">
-									<h2 align="center">Aqui una lista de lo que ofrecemos por 1 año:</h2>
-									<br />
-									<small align="center">Nota: Estos precios <span style="color: rgb(239, 0, 27);">NO</span> incluyen el desarrollo y diseño de la pagina web, solo
-										la parte de Hosting y Dominio.</small>
+							<section id="design">
+								<div class="row">
+									<h1>Diseño y Programacion Web desde cero</h1>
 									<br />
 									<br />
+									<div class="row">
+										<div class="span8">
+											<img src="img/web.png" />
+										</div>
+										<div class="span4">
+											<h2>¿Quieres montar tu pagina web desde cero?</h2>
+											<h3>¡Podemos ayudarte!</h3>
+											<br />
+											<p>
+												Hacemos su pagina web desde cero, con lo que usted necesita, como usted quiera. No utilizamos plantillas,
+												todo lo diseñamos nosotros mismos. Lo unico que necesitamos es la informacion que usted quiera en su pagina
+												(textos, imagenes, banners, etc.) y ¡Listo!.
+											</p>
+											<p>
+												Mision, vision, historia, fotos, productos, contactos... ¡Todo esto es solo una parte de lo que
+												puedes tener en tu pagina web! ¿Que esperas? Puedes
+												solicitar una cotizacion en el area de <a href="#contact">contacto</a>.
+											</p>
+										</div>
 
-									<ul style="font-size: 14px;">
-										<li class="lista">
-											Dominio por 1 año: .com, .net, .org, .com.ve, .net.ve, .org.ve, etc.
-										</li>
-										<li class="lista">
-											Espacio en el disco duro del servidor: 50MB.<span style="color: rgb(239, 0, 27);">*</span>
-										</li>
-										<li class="lista">
-											Cuentas de correo ilimitadas (ejemplo: contacto@nombreDeSuDominio.com) con redireccionamiento, anti
-											spam, etc.
-										</li>
-										<li class="lista">
-											Proteccion de Hotlink.
-										</li>
-										<li class="lista">
-											Subdominios ilimitados.
-										</li>
-										<li class="lista">
-											Bases de datos ilimitadas (MySQL y PostgreSQL).
-										</li>
-										<li class="lista">
-											Panel de control intuitivo y facil de utilizar.
-										</li>
-									</ul>
-									<br />
-									<br />
-									<h2 align="center">¡Todo esto por tan solo</h2>
-									<br />
-									<h1 align="center"><span style="color: rgb(239, 0, 27);">320BsF.</span> Anuales!</h1><br />
-									<span style="color: rgb(239, 0, 27);">*</span>
-									<small>Si se desea mas espacio en el disco duro del servidor, debe preguntar por cotizacion del hosting.</small>
+									</div>
 								</div>
-							</div>
+								<br />
+								<br />
+								<br />
+							</section>
+							<section id="domains">
+								<div class="row">
+									<div class="span12">
+										<h1>Dominio y hosting (solo para clientes, no revendemos)</h1>
+										<br />
+										<br />
+										<div class="row">
+											<div class="span8">
+												<img src="img/ofrecer.png" width="600" height="600" />
+											</div>
+											<div class="span4" align="left">
+												<h2 align="center">Aqui una lista de lo que ofrecemos por 1 año:</h2>
+												<br />
+												<small align="center">Nota: Estos precios <span style="color: rgb(239, 0, 27);">NO</span> incluyen el desarrollo y diseño de la pagina web, solo
+													la parte de Hosting y Dominio.</small>
+												<br />
+												<br />
+
+												<ul style="font-size: 14px;">
+													<li class="lista">
+														Dominio por 1 año: .com, .net, .org, .com.ve, .net.ve, .org.ve, etc.
+													</li>
+													<li class="lista">
+														Espacio en el disco duro del servidor: 50MB.<span style="color: rgb(239, 0, 27);">*</span>
+													</li>
+													<li class="lista">
+														Cuentas de correo ilimitadas (ejemplo: contacto@nombreDeSuDominio.com) con redireccionamiento, anti
+														spam, etc.
+													</li>
+													<li class="lista">
+														Proteccion de Hotlink.
+													</li>
+													<li class="lista">
+														Subdominios ilimitados.
+													</li>
+													<li class="lista">
+														Bases de datos ilimitadas (MySQL y PostgreSQL).
+													</li>
+													<li class="lista">
+														Panel de control intuitivo y facil de utilizar.
+													</li>
+												</ul>
+												<br />
+												<br />
+												<h2 align="center">¡Todo esto por tan solo</h2>
+												<br />
+												<h1 align="center"><span style="color: rgb(239, 0, 27);">320BsF.</span> Anuales!</h1>
+												<br />
+												<span style="color: rgb(239, 0, 27);">*</span>
+												<small>Si se desea mas espacio en el disco duro del servidor, debe preguntar por cotizacion del hosting.</small>
+											</div>
+										</div>
+									</div>
+								</div>
+								<br />
+								<br />
+								<br />
+							</section>
+							<section id="programation">
+								<div class="row">
+									<h1>Programacion Web (PHP/JavaScript/ASP.net)</h1>
+									<br />
+									<br />
+									<div class="row">
+										<div class="span4">
+											<h2>¿Necesitas ayuda con la parte funcional de tu pagina web?</h2>
+											<h3>¡Podemos ayudarte!</h3>
+											<br />
+											<p>
+												Tenemos experiencia con PHP, JavaScript y ASP.net. Si necesitas ayuda, ¡No dudes en pedirla! Puedes
+												solicitar una cotizacion en el area de <a href="#contact">contacto</a>.
+											</p>
+										</div>
+										<div class="span8">
+											<img src="img/php.png" />
+											<img src="img/javascript.png" />
+											<img src="img/asp.png" />
+										</div>
+									</div>
+								</div>
+								<br />
+								<br />
+								<br />
+							</section>
+							<section id="databases">
+								<div class="row">
+									<h1>Bases de datos SQL (mySQL, SQLServer, PostgreSQL)</h1>
+									<br />
+									<br />
+									<div class="row">
+										<div class="span8">
+											<img src="img/mysql.png" />
+											<img src="img/sqlserver.png" />
+											<img src="img/postgresql.png" />
+										</div>
+										<div class="span4">
+											<h2>¿Necesitas ayuda con la/s base de datos de tu pagina web?</h2>
+											<h3>¡Podemos ayudarte!</h3>
+											<br />
+											<p>
+												Tenemos experiencia con mySQL, SQLServer y PostgreSQL. Si necesitas ayuda, ¡No dudes en pedirla! Puedes
+												solicitar una cotizacion en el area de <a href="#contact">contacto</a>.
+											</p>
+										</div>
+									</div>
+								</div>
 						</div>
 					</div>
+					<br />
+					<br />
 					<br />
 					<br />
 				</section>
@@ -344,35 +452,35 @@ $headers = 'From: '.$email_from."\r\n".
 								<div class="control-group">
 									<label class="control-label">Nombres <span style="color: rgb(239, 0, 27);">*</span></label>
 									<div class="controls">
-										<input type="text" class="span3" name="first_name">
+										<input type="text" class="span3 disabled" placeholder="ej: Juan" name="first_name" disabled>
 									</div>
 								</div>
 
 								<div class="control-group">
 									<label class="control-label">Apellidos <span style="color: rgb(239, 0, 27);">*</span></label>
 									<div class="controls">
-										<input type="text" class="span3" name="last_name">
+										<input type="text" class="span3 disabled" placeholder="ej: González" name="last_name" disabled>
 									</div>
 								</div>
 
 								<div class="control-group">
 									<label class="control-label">Email <span style="color: rgb(239, 0, 27);">*</span></label>
 									<div class="controls">
-										<input type="text" class="span3" name="email">
+										<input type="text" class="span3 disabled" placeholder="ej: juangonzalez@gmail.com" name="email" disabled>
 									</div>
 								</div>
 
 								<div class="control-group">
 									<label class="control-label">Numero de telefono</label>
 									<div class="controls">
-										<input type="text" class="span3" name="telephone">
+										<input type="text" class="span3 disabled" placeholder="ej: +58 426 123 45 67" name="telephone" disabled>
 									</div>
 								</div>
 
 								<div class="control-group">
 									<label class="control-label">Comentario <span style="color: rgb(239, 0, 27);">*</span></label>
 									<div class="controls">
-										<textarea  name="comments" class="span3" maxlength="1000" cols="25" rows="6"></textarea>
+										<textarea  name="comments" class="span3 disabled" maxlength="1000" cols="25" rows="6" disabled></textarea>
 									</div>
 								</div>
 
@@ -380,18 +488,14 @@ $headers = 'From: '.$email_from."\r\n".
 									Todos los campos con <span style="color: rgb(239, 0, 27);">*</span> son obligatorios
 								</p>
 								<div class="form-actions" align="center">
-									<button type="submit" class="btn btn-primary btn-large">
-										Enviar Formulario
-									</button>
+									<a class="btn btn-primary btn-large disabled">¡Ya enviaste este formulario!</a>
 								</div>
 							</fieldset>
 						</form>
 					</div>
 					<div class="span6">
 						<h1 align="right">¡Tambien puedes contactar por aqui!</h1>
-						<label align="right">
-							Aqui te dejamos otras maneras de contactarnos:
-						</label>
+						<label align="right"> Aqui te dejamos otras maneras de contactarnos: </label>
 
 						<hr />
 						<div class="row">
@@ -565,7 +669,7 @@ $headers = 'From: '.$email_from."\r\n".
 		</script>
 
 	</body>
-</html>
+</html>	
 <?php
 }
 ?>
