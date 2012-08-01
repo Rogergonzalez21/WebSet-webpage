@@ -2,7 +2,7 @@
 if(isset($_POST['email'])) {
      
     // EDIT THE 2 LINES BELOW AS REQUIRED
-    $email_to = "contacto.webset.com.ve";
+    $email_to = "contacto@webset.com.ve";
     $email_subject = "Contacto de Webset.com.ve";
      
      
@@ -70,6 +70,7 @@ $headers = 'From: '.$email_from."\r\n".
 ?>
  
 <!-- include your own success html here -->
+
 <!DOCTYPE html>
 <html lang="en">
 	<head>
@@ -79,7 +80,7 @@ $headers = 'From: '.$email_from."\r\n".
 		Remove this if you use the .htaccess -->
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 
-		<title>Home</title>
+		<title>WebSet - Diseño de paginas Web</title>
 		<meta name="description" content="" />
 		<meta name="author" content="Roger Gonzalez" />
 
@@ -88,6 +89,9 @@ $headers = 'From: '.$email_from."\r\n".
 		<link rel="stylesheet" type="text/css" href="css/bootstrap-responsive.css" />
 		<link rel="stylesheet" type="text/css" href="css/docs.css" />
 		<link rel="stylesheet" type="text/css" href="css/style.css" />
+
+		<link rel="icon" type="image/x-icon" href="img/favicon.png" />
+
 		<style type="text/css">
 			body {
 				padding-top: 20px;
@@ -97,12 +101,13 @@ $headers = 'From: '.$email_from."\r\n".
 		</style>
 	</head>
 
-	<body data-spy="scroll">
+	<body data-spy="scroll" data-offset="50">
 		<!-- Inicio del Container -->
 		<div class="container">
 			<header class="jumbotron subhead" id="overview">
 				<div class="hero-unit">
-					<h1>Diseño de paginas web</h1>
+					<h1>Web Set</h1>
+					<h2>Diseño de paginas web</h2>
 					<p>
 						Hechas de la manera simple, totalmente modificables.
 					</p>
@@ -118,6 +123,9 @@ $headers = 'From: '.$email_from."\r\n".
 						</li>
 						<li class="">
 							<a href="#otherjobs">Trabajos Anteriores</a>
+						</li>
+						<li class="">
+							<a href="#offer">¿Que tenemos para ofrecer?</a>
 						</li>
 						<li class="">
 							<a href="#contact">Contacto</a>
@@ -223,63 +231,105 @@ $headers = 'From: '.$email_from."\r\n".
 						<hr />
 
 						<div class="row">
-							<div class="span3" align="center">
+							<div class="span4" align="center">
 
 								<h2>Care' Libro</h2>
 								<p class="lead">
-									Red social hecha en ASP.net, C#, MySQL y Bootstrap para un proyecto de la universidad.
+									Red social hecha en ASP.net, C#, MySQL y Bootstrap
 								</p>
+								<a href="#carelibro" data-toggle="modal"><img src="img/CareLibroImagen.png" class="images" alt="CareLibroImage"/></a>
+								<br/>
+								<br />
+								<a class="btn btn-success" id="popover" rel="popover" data-content="Puedes ver el codigo fuente de esta Web desde GitHub. ¡Cuidado! Solo para entendidos" data-original-title="Codigo Fuente" target="_blank" href="https://github.com/adrianObel/Care-Libro">Ver repositorio en GitHub</a>
 
 							</div>
-							<div class="span3" align="center">
+							<div class="span4" align="center">
 
 								<h2>PIBV.org.ve</h2>
 								<p class="lead">
 									Remodelacion de la pagina web de la Primera Iglesia Bautista de Valencia.
 								</p>
-								<small>Aun en construccion</small>
+								
+								<a href="#pibv" data-toggle="modal"><img src="img/PIBVImage.png" class="images" alt="PIBVImage" /></a>
+								<br/>
+								<br />
+								<a class="btn disabled" id="popover2" rel="popover" data-content="Por ahora no hay codigo fuente, lo sentimos." data-original-title="Codigo Fuente" href="#otherjobs">¡No hay codigo fuente!</a>
 
 							</div>
-							<div class="span3" align="center">
 
-								<h2>CNIT.org.ve</h2>
-								<p class="lead">
-									Pagina web del 1er Congreso Nacional de Inovacion Tecnologica.
-								</p>
-							</div>
-							<div class="span3" align="center">
+							<div class="span4" align="center">
 
-								<h2>Nombre.com.ve</h2>
+								<h2>Webset.com.ve</h2>
 								<p class="lead">
 									Esta pagina web que estas viendo, no creo que necesites mas descripcion.
 								</p>
-							</div>
-						</div>
-						<div class="row">
-
-							<div class="span3">
-								<a href="#carelibro" data-toggle="modal"><img src="img/CareLibroImagen.png" class="images" alt="CareLibroImage"/></a>
+								<img src="img/WebsetImagen.png" class="images" alt="WebSetImage" />
+								<br/>
 								<br />
-								<br />
-								<a class="btn btn-success" id="popover" rel="popover" data-content="Puedes ver el codigo fuente de esta Web desde GitHub. ¡Cuidado! Solo para entendidos" data-original-title="Codigo Fuente" target="_blank" href="https://github.com/adrianObel/Care-Libro">Ver repositorio en GitHub</a>
-
-							</div>
-							<div class="span3">
-								<a href="#pibv" data-toggle="modal"><img src="img/PIBVImage.png" class="images" alt="PIBVImage" /></a>
-							</div>
-							<div class="span3">
-								<img src="img/cnit.png" class="images" alt="CNITImage" />
-								<br />
-								<br />
-								<a class="btn btn-success" id="popover3" rel="popover" data-content="Puedes ver el codigo fuente de esta Web desde GitHub. ¡Cuidado! Solo para entendidos" data-original-title="Codigo Fuente" target="_blank" href="https://github.com/sadasant/CNIT.org.ve">Ver repositorio en GitHub</a>
-
-							</div>
-							<div class="span3">
-								<img src="img/cnit.png" class="images" alt="EstaPaginaImage" />
+								<a class="btn btn-success" id="popover4" rel="popover" data-content="Puedes ver el codigo fuente de esta Web desde GitHub. ¡Cuidado! Solo para entendidos" data-original-title="Codigo Fuente" target="_blank" href="https://github.com/Rogergonzalez21/WebSet-webpage">Ver repositorio en GitHub</a>
 							</div>
 						</div>
 					</div>
 				</div>
+				<br />
+				<br />
+				<section id="offer">
+					<div class="row">
+						<div class="span12" align="center">
+							<h1>¿Que tenemos para ofrecer?</h1>
+							<small>Precio por Hosting y Dominio. Si desea una cotizacion por el desarrollo y diseño de una pagina web, 
+								dirijase al area de contacto y envienos un correo electronico.</small>
+							<hr />
+							<div class="row">
+								<div class="span8">
+									<img src="img/ofrecer.png" width="600" height="600" />
+								</div>
+								<div class="span4" align="left">
+									<h2 align="center">Aqui una lista de lo que ofrecemos por 1 año:</h2>
+									<br />
+									<small align="center">Nota: Estos precios <span style="color: rgb(239, 0, 27);">NO</span> incluyen el desarrollo y diseño de la pagina web, solo
+										la parte de Hosting y Dominio.</small>
+									<br />
+									<br />
+
+									<ul style="font-size: 14px;">
+										<li class="lista">
+											Dominio por 1 año: .com, .net, .org, .com.ve, .net.ve, .org.ve, etc.
+										</li>
+										<li class="lista">
+											Espacio en el disco duro del servidor: 50MB.<span style="color: rgb(239, 0, 27);">*</span>
+										</li>
+										<li class="lista">
+											Cuentas de correo ilimitadas (ejemplo: contacto@nombreDeSuDominio.com) con redireccionamiento, anti
+											spam, etc.
+										</li>
+										<li class="lista">
+											Proteccion de Hotlink.
+										</li>
+										<li class="lista">
+											Subdominios ilimitados.
+										</li>
+										<li class="lista">
+											Bases de datos ilimitadas (MySQL y PostgreSQL).
+										</li>
+										<li class="lista">
+											Panel de control intuitivo y facil de utilizar.
+										</li>
+									</ul>
+									<br />
+									<br />
+									<h2 align="center">¡Todo esto por tan solo</h2>
+									<br />
+									<h1 align="center"><span style="color: rgb(239, 0, 27);">320BsF.</span> Anuales!</h1><br />
+									<span style="color: rgb(239, 0, 27);">*</span>
+									<small>Si se desea mas espacio en el disco duro del servidor, debe preguntar por cotizacion del hosting.</small>
+								</div>
+							</div>
+						</div>
+					</div>
+					<br />
+					<br />
+				</section>
 			</section>
 			<section id="contact">
 				<div class="row">
@@ -294,35 +344,35 @@ $headers = 'From: '.$email_from."\r\n".
 								<div class="control-group">
 									<label class="control-label">Nombres <span style="color: rgb(239, 0, 27);">*</span></label>
 									<div class="controls">
-										<input class="span3 disabled" id="disabledInput1" type="text" disabled="">
+										<input type="text" class="span3" name="first_name">
 									</div>
 								</div>
 
 								<div class="control-group">
 									<label class="control-label">Apellidos <span style="color: rgb(239, 0, 27);">*</span></label>
 									<div class="controls">
-										<input class="span3 disabled" id="disabledInput2" type="text" disabled="">
+										<input type="text" class="span3" name="last_name">
 									</div>
 								</div>
 
 								<div class="control-group">
 									<label class="control-label">Email <span style="color: rgb(239, 0, 27);">*</span></label>
 									<div class="controls">
-										<input class="span3 disabled" id="disabledInput3" type="text" disabled="">
+										<input type="text" class="span3" name="email">
 									</div>
 								</div>
 
 								<div class="control-group">
 									<label class="control-label">Numero de telefono</label>
 									<div class="controls">
-										<input class="span3 disabled" id="disabledInput4" type="text" disabled="">
+										<input type="text" class="span3" name="telephone">
 									</div>
 								</div>
 
 								<div class="control-group">
 									<label class="control-label">Comentario <span style="color: rgb(239, 0, 27);">*</span></label>
 									<div class="controls">
-										<textarea  name="comments" class="span3 disabled" id="disabledInput5" maxlength="1000" cols="25" rows="6" disabled=""></textarea>
+										<textarea  name="comments" class="span3" maxlength="1000" cols="25" rows="6"></textarea>
 									</div>
 								</div>
 
@@ -330,17 +380,18 @@ $headers = 'From: '.$email_from."\r\n".
 									Todos los campos con <span style="color: rgb(239, 0, 27);">*</span> son obligatorios
 								</p>
 								<div class="form-actions" align="center">
-									<a href="#" class="btn btn-large disabled">¡Ya enviaste un formulario!</a>
-									
+									<button type="submit" class="btn btn-primary btn-large">
+										Enviar Formulario
+									</button>
 								</div>
 							</fieldset>
 						</form>
 					</div>
 					<div class="span6">
 						<h1 align="right">¡Tambien puedes contactar por aqui!</h1>
-						<p>
+						<label align="right">
 							Aqui te dejamos otras maneras de contactarnos:
-						</p>
+						</label>
 
 						<hr />
 						<div class="row">
@@ -400,9 +451,14 @@ $headers = 'From: '.$email_from."\r\n".
 			</section>
 			<hr />
 			<footer>
-				<p>
+				<div align="center">
+					<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/deed.es"><img alt="Licencia Creative Commons" style="border-width:0" src="http://i.creativecommons.org/l/by-nc-sa/3.0/88x31.png" /></a>
+					<br />
+					<span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">WebSet</span> por <a xmlns:cc="http://creativecommons.org/ns#" href="http://www.webset.com.ve" property="cc:attributionName" rel="cc:attributionURL">Roger Gonzalez - Adrian Obelmejias</a> se encuentra bajo una Licencia <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/deed.es">Creative Commons Atribución-NoComercial-CompartirIgual 3.0 Unported</a>.
+					<br />
 					&copy; Roger Gonzalez & Adrian Obelmejias. 2012
-				</p>
+
+				</div>
 			</footer>
 
 			<div id="pibv" class="modal hide fade in" style="display: none; ">
@@ -483,13 +539,8 @@ $headers = 'From: '.$email_from."\r\n".
 			</div>
 		</div><!-- Fin del Container -->
 		<script src="js/jquery-1.7.2.js"></script>
+		<script src="js/bootstrap.js"></script>
 		<script src="js/scrollsubnav.js"></script>
-		<script src="js/bootstrap-scrollspy.js"></script>
-		<script src="js/bootstrap-modal.js"></script>
-		<script src="js/bootstrap-transition.js"></script>
-		<script src="js/bootstrap-carousel.js"></script>
-		<script src="js/bootstrap-tooltip.js"></script>
-		<script src="js/bootstrap-popover.js"></script>
 		<script src="js/jquery.validate.js"></script>
 		<script src="js/validate.js"></script>
 		<script>
@@ -497,7 +548,13 @@ $headers = 'From: '.$email_from."\r\n".
 				$("#popover").popover();
 			});
 			$(function() {
+				$("#popover2").popover();
+			});
+			$(function() {
 				$("#popover3").popover();
+			});
+			$(function() {
+				$("#popover4").popover();
 			});
 			$(function() {
 				$("#RmailPopover").popover();
@@ -509,7 +566,6 @@ $headers = 'From: '.$email_from."\r\n".
 
 	</body>
 </html>
-
 <?php
 }
 ?>
