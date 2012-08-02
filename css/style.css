@@ -1,3 +1,61 @@
+@font-face {
+  font-family: 'museo-slab';
+  src: url('../font/museo_slab_300-webfont.eot');
+  src: url('../font/museo_slab_300-webfont.eot?#iefix') format('embedded-opentype'), url('../font/museo_slab_300-webfont.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'museo-slab';
+  src: url('../font/museo_slab_500-webfont.eot');
+  src: url('../font/museo_slab_500-webfont.eot?#iefix') format('embedded-opentype'), url('../font/museo_slab_500-webfont.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'proxima-nova';
+  src: url('../font/proximanova-webfont.eot');
+  src: url('../font/proximanova-webfont.eot?#iefix') format('embedded-opentype'), url('../font/proximanova-webfont.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: museo-slab, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.hero-unit .btn-large {
+	
+	font-family: museo-slab, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.btn {
+  font-family: museo-slab, "Helvetica Neue", Helvetica, Arial, sans-serif;
+ }
+
+body {
+	font-family: proxima-nova, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+p {
+  margin: 0 0 10.5px;
+  font-family: proxima-nova, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  text-align:justify;
+}
+textarea {
+  font-family: proxima-nova, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.navbar-search .search-query {
+  font-family: proxima-nova, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+
 .images {
 	height: 151px;
 	width: 270px;
