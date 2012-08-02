@@ -6,4 +6,4 @@ WebSet Webpage. A "Presentation card" web page made with HTML + Bootstrap CSS un
 If you want to see the real page, See this [Link] (http://webset.com.ve/)
 
 
-© Roger Gonzalez & Adrian Obelmejias. 2012
+© Roger Gonzalez, Stefan Maric & Adrian Obelmejias. 2012
