@@ -1,75 +1,3 @@
-<?php
-if(isset($_POST['email'])) {
-     
-    // EDIT THE 2 LINES BELOW AS REQUIRED
-    $email_to = "contacto@webset.com.ve";
-    $email_subject = "Contacto de Webset.com.ve";
-     
-     
-    function died($error) {
-        // your error code can go here
-        echo "Disculpe, pero al parecer hubo errores con el formulario que usted envio. ";
-        echo "Estos errores aparecen aqui listados<br /><br />";
-        echo $error."<br /><br />";
-        echo "Por favor, vuelva y arregle estos errores<br /><br />";
-        die();
-    }
-     
-    // validation expected data exists
-    if(!isset($_POST['first_name']) ||
-        !isset($_POST['last_name']) ||
-        !isset($_POST['email']) ||
-        !isset($_POST['telephone']) ||
-        !isset($_POST['comments'])) {
-        died('Disculpe, pero al parecer hubo errores con el formulario que usted envio.');       
-    }
-     
-    $first_name = $_POST['first_name']; // required
-    $last_name = $_POST['last_name']; // required
-    $email_from = $_POST['email']; // required
-    $telephone = $_POST['telephone']; // not required
-    $comments = $_POST['comments']; // required
-     
-    $error_message = "";
-    $email_exp = '/^[A-Za-z0-9._%-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,4}$/';
-  if(!preg_match($email_exp,$email_from)) {
-    $error_message .= 'El correo electronico que introdujo no parece ser valido.<br />';
-  }
-    $string_exp = "/^[A-Za-z .'-]+$/";
-  if(!preg_match($string_exp,$first_name)) {
-    $error_message .= 'El nombre que introdujo no parece ser valido.<br />';
-  }
-  if(!preg_match($string_exp,$last_name)) {
-    $error_message .= 'El apellido que introdujo no parece ser valido.<br />';
-  }
-  if(strlen($comments) < 2) {
-    $error_message .= 'Los comentarios que introdujo no parecen ser validos.<br />';
-  }
-  if(strlen($error_message) > 0) {
-    died($error_message);
-  }
-    $email_message = "Detalles del formulario enviado.\n\n";
-     
-    function clean_string($string) {
-      $bad = array("content-type","bcc:","to:","cc:","href");
-      return str_replace($bad,"",$string);
-    }
-     
-    $email_message .= "Nombre: ".clean_string($first_name)."\n";
-    $email_message .= "Apellido:  ".clean_string($last_name)."\n";
-    $email_message .= "Email: ".clean_string($email_from)."\n";
-    $email_message .= "Telefono: ".clean_string($telephone)."\n";
-    $email_message .= "Comentario: ".clean_string($comments)."\n";
-     
-     
-// create email headers
-$headers = 'From: '.$email_from."\r\n".
-'Reply-To: '.$email_from."\r\n" .
-'X-Mailer: PHP/' . phpversion();
-@mail($email_to, $email_subject, $email_message, $headers);  
-?>
- 
-<!-- include your own success html here -->
 <!DOCTYPE html>
 <html lang="en">
 	<head>
@@ -85,7 +13,7 @@ $headers = 'From: '.$email_from."\r\n".
 
 		<meta name="viewport" content="width=device-width; initial-scale=1.0" />
 		<link rel="stylesheet" type="text/css" href="css/bootstrap.css"/>
-		<link rel="stylesheet" type="text/css" href="css/bootstrap-responsive.css" />
+		<link rel="stylesheet" type="text/css" href="css/bootstrap-responsiv.css" />
 		<link rel="stylesheet" type="text/css" href="css/docs.css" />
 		<link rel="stylesheet" type="text/css" href="css/style.css" />
 
@@ -110,7 +38,6 @@ $headers = 'From: '.$email_from."\r\n".
 					<p>
 						Hechas de la manera simple, totalmente modificables.
 					</p>
-					<h3 style="color:Green;">¡Muchas gracias! Su mensaje ha sido enviado correctamente. Le responderemos lo antes posible.</h3>
 				</div>
 				<div class="subnav">
 					<ul class="nav nav-pills">
@@ -197,7 +124,7 @@ $headers = 'From: '.$email_from."\r\n".
 								<script>
 									! function(d, s, id) {
 										var js, fjs = d.getElementsByTagName(s)[0];
-										if (!d.getElementById(id)) {
+										if(!d.getElementById(id)) {
 											js = d.createElement(s);
 											js.id = id;
 											js.src = "//platform.twitter.com/widgets.js";
@@ -219,7 +146,7 @@ $headers = 'From: '.$email_from."\r\n".
 								<script>
 									! function(d, s, id) {
 										var js, fjs = d.getElementsByTagName(s)[0];
-										if (!d.getElementById(id)) {
+										if(!d.getElementById(id)) {
 											js = d.createElement(s);
 											js.id = id;
 											js.src = "//platform.twitter.com/widgets.js";
@@ -339,6 +266,7 @@ $headers = 'From: '.$email_from."\r\n".
 									</div>
 
 								</div>
+
 								<br />
 								<br />
 								<br />
@@ -470,35 +398,35 @@ $headers = 'From: '.$email_from."\r\n".
 								<div class="control-group">
 									<label class="control-label">Nombres <span style="color: rgb(239, 0, 27);">*</span></label>
 									<div class="controls">
-										<input type="text" class="span3 disabled" placeholder="ej: Juan" name="first_name" disabled>
+										<input type="text" class="span3" placeholder="ej: Juan" name="first_name">
 									</div>
 								</div>
 
 								<div class="control-group">
 									<label class="control-label">Apellidos <span style="color: rgb(239, 0, 27);">*</span></label>
 									<div class="controls">
-										<input type="text" class="span3 disabled" placeholder="ej: González" name="last_name" disabled>
+										<input type="text" class="span3" placeholder="ej: González" name="last_name">
 									</div>
 								</div>
 
 								<div class="control-group">
 									<label class="control-label">Email <span style="color: rgb(239, 0, 27);">*</span></label>
 									<div class="controls">
-										<input type="text" class="span3 disabled" placeholder="ej: juangonzalez@gmail.com" name="email" disabled>
+										<input type="text" class="span3" placeholder="ej: juangonzalez@gmail.com" name="email">
 									</div>
 								</div>
 
 								<div class="control-group">
 									<label class="control-label">Numero de telefono</label>
 									<div class="controls">
-										<input type="text" class="span3 disabled" placeholder="ej: +58 426 123 45 67" name="telephone" disabled>
+										<input type="text" class="span3" placeholder="ej: +58 426 123 45 67" name="telephone">
 									</div>
 								</div>
 
 								<div class="control-group">
 									<label class="control-label">Comentario <span style="color: rgb(239, 0, 27);">*</span></label>
 									<div class="controls">
-										<textarea  name="comments" class="span3 disabled" maxlength="1000" cols="25" rows="6" disabled></textarea>
+										<textarea  name="comments" class="span3" maxlength="1000" cols="25" rows="6"></textarea>
 									</div>
 								</div>
 
@@ -506,7 +434,9 @@ $headers = 'From: '.$email_from."\r\n".
 									Todos los campos con <span style="color: rgb(239, 0, 27);">*</span> son obligatorios
 								</p>
 								<div class="form-actions" align="center">
-									<a class="btn btn-primary btn-large disabled">¡Ya enviaste este formulario!</a>
+									<button type="submit" class="btn btn-primary btn-large">
+										Enviar Formulario
+									</button>
 								</div>
 							</fieldset>
 						</form>
@@ -662,9 +592,8 @@ $headers = 'From: '.$email_from."\r\n".
 		</div><!-- Fin del Container -->
 		<script src="js/jquery-1.7.2.js"></script>
 		<script src="js/bootstrap.js"></script>
-		<script src="js/scrollsubnav.js"></script>
 		<script src="js/jquery.validate.js"></script>
-		<script src="js/validate.js"></script>
+		<script src="js/javascript.js"></script>
 		<script>
 			$(function() {
 				$("#popover").popover();
@@ -687,7 +616,4 @@ $headers = 'From: '.$email_from."\r\n".
 		</script>
 
 	</body>
-</html>	
-<?php
-}
-?>
+</html>
