@@ -662,9 +662,8 @@ $headers = 'From: '.$email_from."\r\n".
 		</div><!-- Fin del Container -->
 		<script src="js/jquery-1.7.2.js"></script>
 		<script src="js/bootstrap.js"></script>
-		<script src="js/scrollsubnav.js"></script>
 		<script src="js/jquery.validate.js"></script>
-		<script src="js/validate.js"></script>
+		<script src="js/javascript.js"></script>
 		<script>
 			$(function() {
 				$("#popover").popover();
