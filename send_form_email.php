@@ -152,7 +152,7 @@ $headers = 'From: '.$email_from."\r\n".
 					<div class="span4">
 						<h1>¿Quienes somos?</h1>
 						<p>
-							Somos un par de estudiantes de Ingenieria de Informacion con animos de programacion y diseño web.
+							Somos tres de estudiantes de Ingenieria de Informacion con animos de programacion y diseño web.
 							Tenemos 3 años de carrera en una de las mejores universidades del pais (UNITEC)
 						</p>
 						<p>
@@ -187,7 +187,7 @@ $headers = 'From: '.$email_from."\r\n".
 						<hr />
 
 						<div class="row">
-							<div class="span6" align="center">
+							<div class="span4" align="center">
 
 								<h2>Adrian Obelmejias</h2>
 								<img src="img/adrian.png" alt="AdrianImage"/>
@@ -209,7 +209,7 @@ $headers = 'From: '.$email_from."\r\n".
 								<h3>JavaScript</h3>
 
 							</div>
-							<div class="span6" align="center">
+							<div class="span4" align="center">
 
 								<h2>Roger Gonzalez</h2>
 								<img src="img/roger.png" alt="RogerImage" />
@@ -228,6 +228,28 @@ $headers = 'From: '.$email_from."\r\n".
 									}(document, "script", "twitter-wjs");
 								</script>
 								<h2>Diseñador web</h2>
+								<h3>HTML / CSS</h3>
+
+							</div>
+							<div class="span4" align="center">
+
+								<h2>Stefan Maric</h2>
+								<img src="img/stefan.png" alt="StefanImage" />
+								<br />
+								<br />
+								<a href="https://twitter.com/alexstefan92" class="twitter-follow-button" data-show-count="false" data-lang="es">Seguir a @alexstefan92</a>
+								<script>
+									! function(d, s, id) {
+										var js, fjs = d.getElementsByTagName(s)[0];
+										if (!d.getElementById(id)) {
+											js = d.createElement(s);
+											js.id = id;
+											js.src = "//platform.twitter.com/widgets.js";
+											fjs.parentNode.insertBefore(js, fjs);
+										}
+									}(document, "script", "twitter-wjs");
+								</script>
+								<h2>Diseñador Grafico / Web</h2>
 								<h3>HTML / CSS</h3>
 
 							</div>
@@ -289,174 +311,175 @@ $headers = 'From: '.$email_from."\r\n".
 				<br />
 				<br />
 				<br />
-				<section>
-					<div class="row">
-						<div class="span12" align="center">
-							<h1>¿Que tenemos para ofrecer?</h1>
-							<hr />
-							<section id="design">
+
+				<div class="row">
+					<div class="span12" align="center">
+						<h1>¿Que tenemos para ofrecer?</h1>
+						<hr />
+						<section id="design">
+							<div class="row">
+								<h1>Diseño y Programacion Web desde cero</h1>
+								<br />
+								<br />
 								<div class="row">
-									<h1>Diseño y Programacion Web desde cero</h1>
+									<div class="span8">
+										<img src="img/web.png" />
+									</div>
+									<div class="span4">
+										<h2>¿Quieres montar tu pagina web desde cero?</h2>
+										<h3>¡Podemos ayudarte!</h3>
+										<br />
+										<p>
+											Hacemos su pagina web desde cero, con lo que usted necesita, como usted quiera. No utilizamos plantillas,
+											todo lo diseñamos nosotros mismos. Lo unico que necesitamos es la informacion que usted quiera en su pagina
+											(textos, imagenes, banners, etc.) y ¡Listo!.
+										</p>
+										<p>
+											Mision, vision, historia, fotos, productos, contactos... ¡Todo esto es solo una parte de lo que
+											puedes tener en tu pagina web! ¿Que esperas? Puedes
+											solicitar una cotizacion en el area de <a href="#contact">contacto</a>.
+										</p>
+									</div>
+
+								</div>
+							</div>
+							<br />
+							<br />
+							<div class="row">
+								<div class="span4">
+									<img src="img/qr.png" />
+								</div>
+								<div class="span8">
+									<h2>¡Tambien incluimos una pagina web movil! (Para Tablets y SmartPhones)</h2>
+									<br />
+									<p>
+										Su pagina web tendra diseño responsivo. Esto significa que no importa cual sea el tamaño de la pantalla o
+										la resolucion, su pagina web se verá excelente. ¡Intentelo ahora! Escanee este codigo QR desde su telefono
+										inteligente o tablet para probar esta pagina desde cualquier dispositivo movil.
+									</p>
+
+								</div>
+
+							</div>
+
+							<br />
+							<br />
+							<br />
+						</section>
+						<section id="domains">
+							<div class="row">
+								<div class="span12">
+									<h1>Dominio y hosting (solo para clientes, no revendemos)</h1>
 									<br />
 									<br />
 									<div class="row">
 										<div class="span8">
-											<img src="img/web.png" />
+											<img src="img/ofrecer.png" width="600" height="600" />
 										</div>
-										<div class="span4">
-											<h2>¿Quieres montar tu pagina web desde cero?</h2>
-											<h3>¡Podemos ayudarte!</h3>
+										<div class="span4" align="left">
+											<h2 align="center">Aqui una lista de lo que ofrecemos por 1 año:</h2>
 											<br />
-											<p>
-												Hacemos su pagina web desde cero, con lo que usted necesita, como usted quiera. No utilizamos plantillas,
-												todo lo diseñamos nosotros mismos. Lo unico que necesitamos es la informacion que usted quiera en su pagina
-												(textos, imagenes, banners, etc.) y ¡Listo!.
-											</p>
-											<p>
-												Mision, vision, historia, fotos, productos, contactos... ¡Todo esto es solo una parte de lo que
-												puedes tener en tu pagina web! ¿Que esperas? Puedes
-												solicitar una cotizacion en el area de <a href="#contact">contacto</a>.
-											</p>
-										</div>
+											<small align="center">Nota: Estos precios <span style="color: rgb(239, 0, 27);">NO</span> incluyen el desarrollo y diseño de la pagina web, solo
+												la parte de Hosting y Dominio.</small>
+											<br />
+											<br />
 
+											<ul style="font-size: 14px;">
+												<li class="lista">
+													Dominio por 1 año: .com, .net, .org, .com.ve, .net.ve, .org.ve, etc.
+												</li>
+												<li class="lista">
+													Espacio en el disco duro del servidor: 50MB.<span style="color: rgb(239, 0, 27);">*</span>
+												</li>
+												<li class="lista">
+													Cuentas de correo ilimitadas (ejemplo: contacto@nombreDeSuDominio.com) con redireccionamiento, anti
+													spam, etc.
+												</li>
+												<li class="lista">
+													Proteccion de Hotlink.
+												</li>
+												<li class="lista">
+													Subdominios ilimitados.
+												</li>
+												<li class="lista">
+													Bases de datos ilimitadas (MySQL y PostgreSQL).
+												</li>
+												<li class="lista">
+													Panel de control intuitivo y facil de utilizar.
+												</li>
+											</ul>
+											<br />
+											<br />
+											<h2 align="center">¡Todo esto por tan solo</h2>
+											<br />
+											<h1 align="center"><span style="color: rgb(239, 0, 27);">320BsF.</span> Anuales!</h1>
+											<br />
+											<span style="color: rgb(239, 0, 27);">*</span>
+											<small>Si se desea mas espacio en el disco duro del servidor, debe preguntar por cotizacion del hosting.</small>
+										</div>
 									</div>
 								</div>
+							</div>
+							<br />
+							<br />
+							<br />
+						</section>
+						<section id="programation">
+							<div class="row">
+								<h1>Programacion Web (PHP/JavaScript/ASP.net)</h1>
 								<br />
 								<br />
 								<div class="row">
 									<div class="span4">
-										<img src="img/qr.png" />
-									</div>
-									<div class="span8">
-										<h2>¡Tambien incluimos una pagina web movil! (Para Tablets y SmartPhones)</h2>
+										<h2>¿Necesitas ayuda con la parte funcional de tu pagina web?</h2>
+										<h3>¡Podemos ayudarte!</h3>
 										<br />
 										<p>
-											Su pagina web tendra diseño responsivo. Esto significa que no importa cual sea el tamaño de la pantalla o
-											la resolucion, su pagina web se verá excelente. ¡Intentelo ahora! Escanee este codigo QR desde su telefono
-											inteligente o tablet para probar esta pagina desde cualquier dispositivo movil.
+											Tenemos experiencia con PHP, JavaScript y ASP.net. Si necesitas ayuda, ¡No dudes en pedirla! Puedes
+											solicitar una cotizacion en el area de <a href="#contact">contacto</a>.
 										</p>
-
 									</div>
-
+									<div class="span8">
+										<img src="img/php.png" />
+										<img src="img/javascript.png" />
+										<img src="img/asp.png" />
+									</div>
 								</div>
+							</div>
+							<br />
+							<br />
+							<br />
+						</section>
+						<section id="databases">
+							<div class="row">
+								<h1>Bases de datos SQL (mySQL, SQLServer, PostgreSQL)</h1>
 								<br />
 								<br />
-								<br />
-							</section>
-							<section id="domains">
 								<div class="row">
-									<div class="span12">
-										<h1>Dominio y hosting (solo para clientes, no revendemos)</h1>
+									<div class="span8">
+										<img src="img/mysql.png" />
+										<img src="img/sqlserver.png" />
+										<img src="img/postgresql.png" />
+									</div>
+									<div class="span4">
+										<h2>¿Necesitas ayuda con la/s base de datos de tu pagina web?</h2>
+										<h3>¡Podemos ayudarte!</h3>
 										<br />
-										<br />
-										<div class="row">
-											<div class="span8">
-												<img src="img/ofrecer.png" width="600" height="600" />
-											</div>
-											<div class="span4" align="left">
-												<h2 align="center">Aqui una lista de lo que ofrecemos por 1 año:</h2>
-												<br />
-												<small align="center">Nota: Estos precios <span style="color: rgb(239, 0, 27);">NO</span> incluyen el desarrollo y diseño de la pagina web, solo
-													la parte de Hosting y Dominio.</small>
-												<br />
-												<br />
-
-												<ul style="font-size: 14px;">
-													<li class="lista">
-														Dominio por 1 año: .com, .net, .org, .com.ve, .net.ve, .org.ve, etc.
-													</li>
-													<li class="lista">
-														Espacio en el disco duro del servidor: 50MB.<span style="color: rgb(239, 0, 27);">*</span>
-													</li>
-													<li class="lista">
-														Cuentas de correo ilimitadas (ejemplo: contacto@nombreDeSuDominio.com) con redireccionamiento, anti
-														spam, etc.
-													</li>
-													<li class="lista">
-														Proteccion de Hotlink.
-													</li>
-													<li class="lista">
-														Subdominios ilimitados.
-													</li>
-													<li class="lista">
-														Bases de datos ilimitadas (MySQL y PostgreSQL).
-													</li>
-													<li class="lista">
-														Panel de control intuitivo y facil de utilizar.
-													</li>
-												</ul>
-												<br />
-												<br />
-												<h2 align="center">¡Todo esto por tan solo</h2>
-												<br />
-												<h1 align="center"><span style="color: rgb(239, 0, 27);">320BsF.</span> Anuales!</h1>
-												<br />
-												<span style="color: rgb(239, 0, 27);">*</span>
-												<small>Si se desea mas espacio en el disco duro del servidor, debe preguntar por cotizacion del hosting.</small>
-											</div>
-										</div>
+										<p>
+											Tenemos experiencia con mySQL, SQLServer y PostgreSQL. Si necesitas ayuda, ¡No dudes en pedirla! Puedes
+											solicitar una cotizacion en el area de <a href="#contact">contacto</a>.
+										</p>
 									</div>
 								</div>
-								<br />
-								<br />
-								<br />
-							</section>
-							<section id="programation">
-								<div class="row">
-									<h1>Programacion Web (PHP/JavaScript/ASP.net)</h1>
-									<br />
-									<br />
-									<div class="row">
-										<div class="span4">
-											<h2>¿Necesitas ayuda con la parte funcional de tu pagina web?</h2>
-											<h3>¡Podemos ayudarte!</h3>
-											<br />
-											<p>
-												Tenemos experiencia con PHP, JavaScript y ASP.net. Si necesitas ayuda, ¡No dudes en pedirla! Puedes
-												solicitar una cotizacion en el area de <a href="#contact">contacto</a>.
-											</p>
-										</div>
-										<div class="span8">
-											<img src="img/php.png" />
-											<img src="img/javascript.png" />
-											<img src="img/asp.png" />
-										</div>
-									</div>
-								</div>
-								<br />
-								<br />
-								<br />
-							</section>
-							<section id="databases">
-								<div class="row">
-									<h1>Bases de datos SQL (mySQL, SQLServer, PostgreSQL)</h1>
-									<br />
-									<br />
-									<div class="row">
-										<div class="span8">
-											<img src="img/mysql.png" />
-											<img src="img/sqlserver.png" />
-											<img src="img/postgresql.png" />
-										</div>
-										<div class="span4">
-											<h2>¿Necesitas ayuda con la/s base de datos de tu pagina web?</h2>
-											<h3>¡Podemos ayudarte!</h3>
-											<br />
-											<p>
-												Tenemos experiencia con mySQL, SQLServer y PostgreSQL. Si necesitas ayuda, ¡No dudes en pedirla! Puedes
-												solicitar una cotizacion en el area de <a href="#contact">contacto</a>.
-											</p>
-										</div>
-									</div>
-								</div>
-						</div>
+							</div>
 					</div>
-					<br />
-					<br />
-					<br />
-					<br />
-				</section>
+				</div>
+				<br />
+				<br />
+				<br />
+				<br />
 			</section>
+
 			<section id="contact">
 				<div class="row">
 					<div class="span6">
@@ -470,35 +493,35 @@ $headers = 'From: '.$email_from."\r\n".
 								<div class="control-group">
 									<label class="control-label">Nombres <span style="color: rgb(239, 0, 27);">*</span></label>
 									<div class="controls">
-										<input type="text" class="span3 disabled" placeholder="ej: Juan" name="first_name" disabled>
+										<input type="text" class="span3" placeholder="ej: Juan" name="first_name">
 									</div>
 								</div>
 
 								<div class="control-group">
 									<label class="control-label">Apellidos <span style="color: rgb(239, 0, 27);">*</span></label>
 									<div class="controls">
-										<input type="text" class="span3 disabled" placeholder="ej: González" name="last_name" disabled>
+										<input type="text" class="span3" placeholder="ej: González" name="last_name">
 									</div>
 								</div>
 
 								<div class="control-group">
 									<label class="control-label">Email <span style="color: rgb(239, 0, 27);">*</span></label>
 									<div class="controls">
-										<input type="text" class="span3 disabled" placeholder="ej: juangonzalez@gmail.com" name="email" disabled>
+										<input type="text" class="span3" placeholder="ej: juangonzalez@gmail.com" name="email">
 									</div>
 								</div>
 
 								<div class="control-group">
 									<label class="control-label">Numero de telefono</label>
 									<div class="controls">
-										<input type="text" class="span3 disabled" placeholder="ej: +58 426 123 45 67" name="telephone" disabled>
+										<input type="text" class="span3" placeholder="ej: +58 426 123 45 67" name="telephone">
 									</div>
 								</div>
 
 								<div class="control-group">
 									<label class="control-label">Comentario <span style="color: rgb(239, 0, 27);">*</span></label>
 									<div class="controls">
-										<textarea  name="comments" class="span3 disabled" maxlength="1000" cols="25" rows="6" disabled></textarea>
+										<textarea  name="comments" class="span3" maxlength="1000" cols="25" rows="6"></textarea>
 									</div>
 								</div>
 
@@ -506,7 +529,9 @@ $headers = 'From: '.$email_from."\r\n".
 									Todos los campos con <span style="color: rgb(239, 0, 27);">*</span> son obligatorios
 								</p>
 								<div class="form-actions" align="center">
-									<a class="btn btn-primary btn-large disabled">¡Ya enviaste este formulario!</a>
+									<button type="submit" class="btn btn-primary btn-large">
+										Enviar Formulario
+									</button>
 								</div>
 							</fieldset>
 						</form>
@@ -516,10 +541,10 @@ $headers = 'From: '.$email_from."\r\n".
 						<label align="right"> Aqui te dejamos otras maneras de contactarnos: </label>
 
 						<hr />
-						<div class="row">
-							<div class="span3">
+						<div class="row" align="center">
+							<div class="span2">
 								<h3>Roger Gonzalez</h3>
-								Numero de Telefono:
+								Numero de Telefono:<br />
 								<code>
 									+58 426 6497815
 								</code>
@@ -541,9 +566,9 @@ $headers = 'From: '.$email_from."\r\n".
 
 								<a href="mailto:rogergonzalez21@gmail.com" id="RmailPopover" class="btn btn-inverse btn-large" rel="popover" data-content="Necesitas tener tu cliente de correo electronico abierto (Microsoft Outlook, Mozilla Thunderbird)." data-original-title="Contacto por Correo Electronico">Enviar Correo Electronico</a>
 							</div>
-							<div class="span3">
+							<div class="span2">
 								<h3>Adrian Obelmejias</h3>
-								Numero de Telefono:
+								Numero de Telefono:<br />
 								<code>
 									+58 424 4695031
 								</code>
@@ -565,6 +590,30 @@ $headers = 'From: '.$email_from."\r\n".
 
 								<a href="mailto:obeladrian@gmail.com" id="AmailPopover" class="btn btn-inverse btn-large" rel="popover" data-content="Necesitas tener tu cliente de correo electronico abierto (Microsoft Outlook, Mozilla Thunderbird)." data-original-title="Contacto por Correo Electronico">Enviar Correo Electronico</a>
 							</div>
+							<div class="span2">
+								<h3>Stefan Maric</h3>
+								Numero de Telefono:<br />
+								<code>
+									+58 412 5361889
+								</code>
+								<br />
+								<br />
+								<h4>Redes Sociales</h4>
+								<br />
+								<a target="_blank" class="btn btn-primary" href="https://www.facebook.com/alexstefan92">Facebook</a>
+								<br />
+								<br />
+								<a target="_blank" class="btn btn-info" href="https://twitter.com/alexstefan92">Twitter</a>
+								<br />
+								<br />
+								<a target="_blank" class="btn btn-success" href="http://geekli.st/samm">GeekList</a>
+								<br />
+
+								<br />
+								<br />
+
+								<a href="mailto:alexstefan92@gmail.com" id="SmailPopover" class="btn btn-inverse btn-large" rel="popover" data-content="Necesitas tener tu cliente de correo electronico abierto (Microsoft Outlook, Mozilla Thunderbird)." data-original-title="Contacto por Correo Electronico">Enviar Correo Electronico</a>
+							</div>
 						</div>
 					</div>
 
@@ -576,9 +625,9 @@ $headers = 'From: '.$email_from."\r\n".
 				<div align="center">
 					<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/deed.es"><img alt="Licencia Creative Commons" style="border-width:0" src="http://i.creativecommons.org/l/by-nc-sa/3.0/88x31.png" /></a>
 					<br />
-					<span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">WebSet</span> por <a xmlns:cc="http://creativecommons.org/ns#" href="http://www.webset.com.ve" property="cc:attributionName" rel="cc:attributionURL">Roger Gonzalez - Adrian Obelmejias</a> se encuentra bajo una Licencia <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/deed.es">Creative Commons Atribución-NoComercial-CompartirIgual 3.0 Unported</a>.
+					<span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">WebSet</span> por <a xmlns:cc="http://creativecommons.org/ns#" href="http://www.webset.com.ve" property="cc:attributionName" rel="cc:attributionURL">Roger Gonzalez - Stefan Maric - Adrian Obelmejias</a> se encuentra bajo una Licencia <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/deed.es">Creative Commons Atribución-NoComercial-CompartirIgual 3.0 Unported</a>.
 					<br />
-					&copy; Roger Gonzalez & Adrian Obelmejias. 2012
+					&copy; Roger Gonzalez, Stefan Maric & Adrian Obelmejias. 2012
 
 				</div>
 			</footer>
@@ -683,10 +732,13 @@ $headers = 'From: '.$email_from."\r\n".
 			$(function() {
 				$("#AmailPopover").popover();
 			});
+			$(function() {
+				$("#SmailPopover").popover();
+			});
 		</script>
 
 	</body>
-</html>	
+</html>		
 <?php
 }
 ?>
