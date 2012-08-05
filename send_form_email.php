@@ -460,35 +460,35 @@ $headers = 'From: '.$email_from."\r\n".
 								<div class="control-group">
 									<label class="control-label">Nombres <span style="color: rgb(239, 0, 27);">*</span></label>
 									<div class="controls">
-										<input type="text" class="span3" placeholder="ej: Juan" name="first_name">
+										<input type="text" class="span3 disabled" placeholder="ej: Juan" name="first_name" disabled>
 									</div>
 								</div>
 
 								<div class="control-group">
 									<label class="control-label">Apellidos <span style="color: rgb(239, 0, 27);">*</span></label>
 									<div class="controls">
-										<input type="text" class="span3" placeholder="ej: González" name="last_name">
+										<input type="text" class="span3 disabled" placeholder="ej: González" name="last_name" disabled>
 									</div>
 								</div>
 
 								<div class="control-group">
 									<label class="control-label">Email <span style="color: rgb(239, 0, 27);">*</span></label>
 									<div class="controls">
-										<input type="text" class="span3" placeholder="ej: juangonzalez@gmail.com" name="email">
+										<input type="text" class="span3 disabled" placeholder="ej: juangonzalez@gmail.com" name="email" disabled>
 									</div>
 								</div>
 
 								<div class="control-group">
 									<label class="control-label">Numero de telefono</label>
 									<div class="controls">
-										<input type="text" class="span3" placeholder="ej: +58 426 123 45 67" name="telephone">
+										<input type="text" class="span3 disabled" placeholder="ej: +58 426 123 45 67" name="telephone" disabled>
 									</div>
 								</div>
 
 								<div class="control-group">
 									<label class="control-label">Comentario <span style="color: rgb(239, 0, 27);">*</span></label>
 									<div class="controls">
-										<textarea  name="comments" class="span3" maxlength="1000" cols="25" rows="6"></textarea>
+										<textarea  name="comments disabled" class="span3" maxlength="1000" cols="25" rows="6" disabled></textarea>
 									</div>
 								</div>
 
@@ -496,9 +496,9 @@ $headers = 'From: '.$email_from."\r\n".
 									Todos los campos con <span style="color: rgb(239, 0, 27);">*</span> son obligatorios
 								</p>
 								<div class="form-actions" align="center">
-									<button type="submit" class="btn btn-primary btn-large">
-										Enviar Formulario
-									</button>
+									<a type="submit" class="btn btn-primary btn-large" disabled>
+										¡Ya enviaste este formulario!
+									</a>
 								</div>
 							</fieldset>
 						</form>
