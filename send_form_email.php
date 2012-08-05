@@ -194,17 +194,6 @@ $headers = 'From: '.$email_from."\r\n".
 								<br />
 								<br />
 								<a href="https://twitter.com/obeladrian" class="twitter-follow-button" data-show-count="false" data-lang="es">Seguir a @obeladrian</a>
-								<script>
-									! function(d, s, id) {
-										var js, fjs = d.getElementsByTagName(s)[0];
-										if (!d.getElementById(id)) {
-											js = d.createElement(s);
-											js.id = id;
-											js.src = "//platform.twitter.com/widgets.js";
-											fjs.parentNode.insertBefore(js, fjs);
-										}
-									}(document, "script", "twitter-wjs");
-								</script>
 								<h2>Programador</h2>
 								<h3>JavaScript</h3>
 
@@ -216,17 +205,6 @@ $headers = 'From: '.$email_from."\r\n".
 								<br />
 								<br />
 								<a href="https://twitter.com/RogerGonzalez21" class="twitter-follow-button" data-show-count="false" data-lang="es">Seguir a @RogerGonzalez21</a>
-								<script>
-									! function(d, s, id) {
-										var js, fjs = d.getElementsByTagName(s)[0];
-										if (!d.getElementById(id)) {
-											js = d.createElement(s);
-											js.id = id;
-											js.src = "//platform.twitter.com/widgets.js";
-											fjs.parentNode.insertBefore(js, fjs);
-										}
-									}(document, "script", "twitter-wjs");
-								</script>
 								<h2>Diseñador web</h2>
 								<h3>HTML / CSS</h3>
 
@@ -238,17 +216,6 @@ $headers = 'From: '.$email_from."\r\n".
 								<br />
 								<br />
 								<a href="https://twitter.com/alexstefan92" class="twitter-follow-button" data-show-count="false" data-lang="es">Seguir a @alexstefan92</a>
-								<script>
-									! function(d, s, id) {
-										var js, fjs = d.getElementsByTagName(s)[0];
-										if (!d.getElementById(id)) {
-											js = d.createElement(s);
-											js.id = id;
-											js.src = "//platform.twitter.com/widgets.js";
-											fjs.parentNode.insertBefore(js, fjs);
-										}
-									}(document, "script", "twitter-wjs");
-								</script>
 								<h2>Diseñador Grafico / Web</h2>
 								<h3>HTML / CSS</h3>
 
@@ -709,34 +676,10 @@ $headers = 'From: '.$email_from."\r\n".
 				</div>
 			</div>
 		</div><!-- Fin del Container -->
-		<script src="js/jquery-1.7.2.js"></script>
-		<script src="js/bootstrap.js"></script>
+		<script src="js/jquery-min.js"></script>
 		<script src="js/jquery.validate.js"></script>
+		<script src="js/bootstrap.js"></script>
 		<script src="js/javascript.js"></script>
-		<script>
-			$(function() {
-				$("#popover").popover();
-			});
-			$(function() {
-				$("#popover2").popover();
-			});
-			$(function() {
-				$("#popover3").popover();
-			});
-			$(function() {
-				$("#popover4").popover();
-			});
-			$(function() {
-				$("#RmailPopover").popover();
-			});
-			$(function() {
-				$("#AmailPopover").popover();
-			});
-			$(function() {
-				$("#SmailPopover").popover();
-			});
-		</script>
-
 	</body>
 </html>		
 <?php
