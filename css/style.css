@@ -1,3 +1,5 @@
+/* ----------------- font stuff ----------------- */
+
 @font-face {
     font-family: 'SansationRegular';
     src: url('../font/Sansation_Regular-webfont.eot');
@@ -153,16 +155,64 @@
 }
 
 body { 
-  padding-bottom: 50px;
+  padding-bottom: 90px;
   font-family: "OpenSansRegular", "Helvetica Neue", "Helvetica", "Verdana", "Arial", sans-serif;
-  font-size: 16px;
-  line-height: 22px;
 }
 
 h1, h2, h3, h4, h5, h6 { 
   font-family: "SansationRegular";
   font-weight: normal;
 }
+
+/* END of font stuff */
+
+
+/* ----------------- FIXES ----------------- */
+
+.navbar {
+    font-size: 14px;
+    /* decrease and ensure navbar's font-size */
+}
+
+.navbar .brand {
+    font-family: "OpenSansLight";
+    font-size: 18px;
+    /* if logo image it's not displayed */
+    padding: 10px 20px;
+    /* 10 of top + 10 of bottom + 30 of logo height = 50 of navbar */
+}
+
+.nav-collapse .nav > li > a, .nav-collapse .dropdown-menu a {
+    font-weight: normal;
+    /* overwrite font-weight of bootstrap-responsive.css because looks ugly */
+}
+
+@media (max-width: 979px) {
+
+  .navbar-fixed-top,
+  .navbar-fixed-bottom {
+    position: fixed;
+    /* fix navbar always, bootstrap-responsive.css make it static on lower resolutions */
+  }
+
+  body {
+    padding-top: 90px;
+    /* since the bar is fixed, we should leave the original margin,
+        bootstrap-responsive.css take away the margin */
+  }
+}
+
+@media (max-width: 767px) {
+    .navbar .btn-navbar {
+        margin-right: 20px;
+        /* on lower resolutions, bootstrap-responsive.css puts negative margins on navbar,
+            so .btn-navbar gets out of screen */
+    }
+}
+
+/* END of fixes */
+
+
 
 .images {
 	height: 151px;
