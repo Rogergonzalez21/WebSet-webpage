@@ -90,17 +90,56 @@ $headers = 'From: '.$email_from."\r\n".
 		<link rel="stylesheet" type="text/css" href="css/style.css" />
 
 		<link rel="icon" type="image/x-icon" href="img/favicon.png" />
-
-		<style type="text/css">
-			body {
-				padding-top: 20px;
-				padding-bottom: 40px;
-			}
-
-		</style>
 	</head>
 
 	<body data-spy="scroll" data-offset="50">
+		<div class="navbar navbar-fixed-top">
+			<div class="navbar-inner">
+				<div class="container">
+					<button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					</button>
+					<a class="brand" href="./index.html"><img src="img/logo-small.png" alt="Webset" /></a>
+					<div class="nav-collapse collapse">
+						<ul class="nav pull-right">
+							<li class="">
+								<a href="#quienessomos">¿Quienes Somos?</a>
+							</li>
+							<li class="">
+								<a href="#moreofus">Mas sobre nosotros</a>
+							</li>
+							<li class="">
+								<a href="#otherjobs">Trabajos Anteriores</a>
+							</li>
+							<li class="dropdown">
+								<a class="dropdown-toggle" data-toggle="dropdown" href="#">¿Que tenemos para ofrecer? 
+									<b class="caret"> </b>
+								</a>
+								<ul class="dropdown-menu">
+									<li>
+										<a href="#design">Diseño/Programacion web</a>
+									</li>
+									<li>
+										<a href="#domains">Dominios y Hosting</a>
+									</li>
+									<li>
+										<a href="#programation">Programacion Web</a>
+									</li>
+									<li>
+										<a href="#databases">Bases de datos</a>
+									</li>
+								</ul>
+							</li>
+							<li class="">
+								<a href="#contact">Contacto</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+	    </div>
 		<!-- Inicio del Container -->
 		<div class="container">
 			<header class="jumbotron subhead" id="overview">
@@ -110,41 +149,7 @@ $headers = 'From: '.$email_from."\r\n".
 					<p>
 						Hechas de la manera simple, totalmente modificables.
 					</p>
-					<h3 style="color:Green;">¡Muchas gracias! Su mensaje ha sido enviado correctamente. Le responderemos lo antes posible.</h3>
-				</div>
-				<div class="subnav">
-					<ul class="nav nav-pills">
-						<li class="active">
-							<a href="#quienessomos">¿Quienes Somos?</a>
-						</li>
-						<li class="">
-							<a href="#moreofus">Mas sobre nosotros</a>
-						</li>
-						<li class="">
-							<a href="#otherjobs">Trabajos Anteriores</a>
-						</li>
-
-						<li class="dropdown">
-							<a class="dropdown-toggle" data-toggle="dropdown" href="#">¿Que tenemos para ofrecer?<b class="caret"></b></a>
-							<ul class="dropdown-menu">
-								<li>
-									<a href="#design">Diseño/Programacion web</a>
-								</li>
-								<li>
-									<a href="#domains">Dominios y Hosting</a>
-								</li>
-								<li>
-									<a href="#programation">Programacion Web</a>
-								</li>
-								<li>
-									<a href="#databases">Bases de datos</a>
-								</li>
-							</ul>
-						</li>
-						<li class="">
-							<a href="#contact">Contacto</a>
-						</li>
-					</ul>
+						<h3 style="color:Green;">¡Muchas gracias! Su mensaje ha sido enviado correctamente. Le responderemos lo antes posible.</h3>
 				</div>
 			</header>
 			<section id="quienessomos">
@@ -276,7 +281,7 @@ $headers = 'From: '.$email_from."\r\n".
 								<a href="#carelibro" data-toggle="modal"><img src="img/CareLibroImagen.png" class="images" alt="CareLibroImage"/></a>
 								<br/>
 								<br />
-								<a class="btn btn-success" id="popover" rel="popover" data-content="Puedes ver el codigo fuente de esta Web desde GitHub. ¡Cuidado! Solo para entendidos" data-original-title="Codigo Fuente" target="_blank" href="https://github.com/adrianObel/Care-Libro">Ver repositorio en GitHub</a>
+								<a class="btn btn-success" id="popover" rel="popover" data-trigger="hover" data-content="Puedes ver el codigo fuente de esta Web desde GitHub. ¡Cuidado! Solo para entendidos" data-original-title="Codigo Fuente" target="_blank" href="https://github.com/adrianObel/Care-Libro">Ver repositorio en GitHub</a>
 
 							</div>
 							<div class="span4" align="center">
@@ -289,7 +294,7 @@ $headers = 'From: '.$email_from."\r\n".
 								<a href="#pibv" data-toggle="modal"><img src="img/PIBVImage.png" class="images" alt="PIBVImage" /></a>
 								<br/>
 								<br />
-								<a class="btn disabled" id="popover2" rel="popover" data-content="Por ahora no hay codigo fuente, lo sentimos." data-original-title="Codigo Fuente" href="#otherjobs">¡No hay codigo fuente!</a>
+								<a class="btn disabled" id="popover2" rel="popover" data-trigger="hover" data-content="Por ahora no hay codigo fuente, lo sentimos." data-original-title="Codigo Fuente" href="#otherjobs">¡No hay codigo fuente!</a>
 
 							</div>
 
@@ -302,7 +307,7 @@ $headers = 'From: '.$email_from."\r\n".
 								<img src="img/WebsetImagen.png" class="images" alt="WebSetImage" />
 								<br/>
 								<br />
-								<a class="btn btn-success" id="popover4" rel="popover" data-content="Puedes ver el codigo fuente de esta Web desde GitHub. ¡Cuidado! Solo para entendidos" data-original-title="Codigo Fuente" target="_blank" href="https://github.com/Rogergonzalez21/WebSet-webpage">Ver repositorio en GitHub</a>
+								<a class="btn btn-success" id="popover4" rel="popover" data-trigger="hover" data-content="Puedes ver el codigo fuente de esta Web desde GitHub. ¡Cuidado! Solo para entendidos" data-original-title="Codigo Fuente" target="_blank" href="https://github.com/Rogergonzalez21/WebSet-webpage">Ver repositorio en GitHub</a>
 							</div>
 						</div>
 					</div>
@@ -529,7 +534,7 @@ $headers = 'From: '.$email_from."\r\n".
 									Todos los campos con <span style="color: rgb(239, 0, 27);">*</span> son obligatorios
 								</p>
 								<div class="form-actions" align="center">
-									<a class="btn btn-primary btn-large disabled">
+									<a class="btn btn-primary btn-large disabled" disabled>
 										¡Ya enviaste este formulario!
 									</a>
 								</div>
@@ -738,7 +743,10 @@ $headers = 'From: '.$email_from."\r\n".
 		</script>
 
 	</body>
-</html>		
+</html>
+
+				
+				
 <?php
 }
 ?>
