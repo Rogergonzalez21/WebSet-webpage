@@ -99,7 +99,7 @@ $(document).ready(function(){
   }
 
 
- 
+ //DafuQ??
 
 // fix sub nav on scroll
   var $win = $(window)
@@ -126,6 +126,11 @@ $(document).ready(function(){
         $nav.removeClass('subnav-fixed')
       }
     }
+
+
+
+//DafuQ ended xd
+
 
   $(function() {
      $("#popover").popover();
